@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<title>しおり</title>
+<link rel="stylesheet" href="css/index_test.css">
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfG6kYvjVRUbb8wTDEybYWSbmGasyfgeU">
+    </script>
+
+
+<script src="js/main.js"></script>
+</head>
+<body>
+<div id="map"></div>
+
+    <p>
+    <input type="date" name="example1">
+    <input type="button" value="お気に入り" onclick="favoritePage();">
+    <!--<input type="button" value="次の日へ" onclick="location.href= 'index2.html'">-->
+    </p>
+    
+        <!--<p><input type="text" ng-model="yourName"></p>
+        <p>Hello {{yourName}}!</p>-->
+            
+
+<form name="form1" id="id_form1" action="">
+<p>出発地<br>
+<input type="text" name="example" id="s" size="50" value="品川駅"/></p>
+
+<div id="directionsPanel"></div>
+
+<p>目的地<br>
+<input type="text" name="example" id="m" size="50" value="東京駅"/></p>
+
+<!--<div>
+    漁船航跡表示
+    <select class="ChangeSelect">
+        <option value="1" selected>表示（薄い）</option>
+        <option value="2">表示（中）</option>
+        <option value="3">表示（濃い）</option>
+        <option value="4">非表示</option>
+    </select>
+    </div>-->
+
+<p><input type="button" value="OK" onclick="onButtonClick();"/>
+<input type="button" value="追加" onclick="addElement();"/></p>
+</form>
+
+
+</div>
+<div id="piyo">
+</div>
+
+
+
+
+</body>
+</html>
+

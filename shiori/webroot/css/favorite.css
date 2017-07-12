@@ -1,0 +1,19 @@
+/*
+ * sample-7.css
+ * Directions Serviceを利用する | Lopan.jp
+ */
+ 
+body { margin: 0; line-height: 160%; font-family: arial,sans-serif; }
+html, body, #map, #directionsPanel { height: 100%; }
+#map { float: right; width: 50%; }
+#directionsPanel { float: left; width: 50%; overflow: auto; font-size: 80%; line-height: 160%; }
+ 
+@media print {
+  html, body { height: auto; }
+  #map { height: 650px; }
+}
+.adp-placemark { margin-top: 0; }
+.adp-step { background: #eee; }
+.adp-summary, .adp-step, .adp-substep { padding: 0.3em 0.5em; }
+.adp-legal { padding: 0 0.5em; font-size: 80%; }
+

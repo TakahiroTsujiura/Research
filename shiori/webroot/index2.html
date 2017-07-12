@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<title>しおり</title>
+<link rel="stylesheet" href="css/index_routetest.css">
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyB5zXFVZxgFK8PF4kWB_WRSrJBG0sOS9qQ"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+<div id="map"></div>
+
+    <p>
+    <input type="date" name="example1">
+    <input type="button" value="お気に入り" onclick="location.href= 'favorite.html'">
+    <input type="button" value="前の日へ" onclick="location.href= 'index_routetest.html'">
+    <input type="button" value="次の日へ" onclick="location.href= 'index3.html'">
+    
+    </p>
+
+<form name="form1" id="id_form1" action="">
+<p>出発地<br>
+<input type="text" name="example" id="s" size="50" value=""/></p>
+
+<div id="directionsPanel"></div>
+
+<p>目的地<br>
+<input type="text" name="example" id="m" size="50" value=""/></p>
+<p><input type="button" value="OK" onclick="onButtonClick();"/>
+<input type="button" value="追加" onclick="addElement();"/></p>
+</form>
+
+
+</div>
+<div id="piyo">
+</div>
+
+	<select class="ChangeSelect">
+	<option value="1" selected>予定を追加</option>
+	<option value="2">ホテル</option>
+	<option value="3">表示（濃い）</option>
+        <option value="4">非表示</option>
+	</select>
+
+</body>
+</html>
+
